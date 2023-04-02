@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <title>signup</title>
+  </head>
+  <body>
+    <form>
+      <h2>Welcome to INTERNET-PROGRAMMING SHOP</h2>
+    <p>
+      <a href=login.html><label>로그인</label></a>
+      <a href=signup.html><label>회원가입</label></a>
+    </p>
+    <p><br></p>
+    <p>
+      아이디
+      <input type="id" id="id" name="id" autofocus required placeholder="아이디를 입력하세요" autocomplete="on">
+    </p>
+    <p>
+      비밀번호
+      <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요.">
+    </p>
+    <p>
+      비밀번호 확인
+      <input type="password" id="confirm-password" name="confirm-password" required placeholder="비밀번호 확인.">
+    </p>
+    <p>
+      이름
+      <input type="username" id="username" name="username" required placeholder="이름을 입력하세요." autocomplete="on">
+    </p>
+    <p>
+      생년월일
+      <input type="date" name=""date">
+    </p>
+    <p>
+        학년
+        <input type="number" id="grade" name="grade" required autocomplete="on" step="1" min="1" max="4">
+      </p>
+    <p>
+      성별
+      <input type="radio" id="male" name="gender" value="male">
+      남성
+      <input type="radio" id="female" name="gender" value="female">
+      여성
+    </p>
+    <p>
+      이메일
+      <input type="email" id="email" name="email" required placeholder="이메일을 입력하세요." autocomplete="on">
+    </p>
+    <p>
+      회원가입에 동의합니다. 
+      <input type="checkbox" name="agree" value="agree" required>
+    </p>
+    <p>
+      <input type="submit" value="Signup">
+      <input type="reset" value="Cancel">
+    </p>
+    </form>
+  </body>
+</html>
