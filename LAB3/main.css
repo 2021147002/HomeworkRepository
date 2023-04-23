@@ -1,0 +1,205 @@
+@keyframes slidein {
+    from {
+        margin-left: 1020px;
+    }
+    to {
+        margin-left: 0%;
+    }
+}     
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+}
+h1 {
+    font-size: 36px;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 2s;
+    font-family: 'Arial';
+}
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    padding-right: 20px;
+}
+a {
+    margin-right: 7px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80px;
+    height: 40px;
+}
+input[type="reset"] {
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80px;
+    height: 40px;
+}
+img:hover {
+    transform: scale(1.5);
+}
+.text-overlay {
+    display: none;
+    color: white;
+    background-color: #444444;
+    position: absolute;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+img:hover + .text-overlay {
+    display: block;
+}
+@media (min-width:801px) {
+    hr {
+        margin:0; 
+        width:1020px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 2s;
+        border: 1px solid black;
+    }
+    .navigator {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width:1020px;
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    } 
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .box4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .column-text {
+        columns: 2;
+        column-gap: 20px;
+        text-align: justify;
+        
+    }
+}
+@media (max-width:800px) and (min-width:481px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 2s;
+        border: 1px solid black;
+    }
+    .navigator {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    } 
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box4 {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .column-text {
+        columns: 1;
+    }
+}
+@media (max-width: 480px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 2s;
+        border: 1px solid black;
+    }
+    .navigator {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    } 
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .box4 {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .column-text {
+        columns: 1;
+    }
+}
