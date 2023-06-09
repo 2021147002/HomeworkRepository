@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manhwa DataBase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+        color: black;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .navbar {
+        background-color: darkslategrey;
+      }
+  
+      .navbar .nav-link {
+        color: royalblue;
+      }
+  
+      .search-bar input[type="text"] {
+        background-color: #503A3A;
+        color: #2E2828;
+      }
+  
+      .manga-card {
+        background-color: #f8f9fa;
+        color: darkred;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+  
+      .manga-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      .manga-card h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+  
+      .manga-card p {
+        font-size: 14px;
+      }
+  
+      .manga-card .synopsis-more {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a style="font-weight:bold">Manhwa DataBase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Communinty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign-In</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign-Up</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mt-4">
+      <h2><b>Sign-In</b></h2>
+      <hr>
+      <p>Username&nbsp;&nbsp;<input type="id" id="id" name="id" required placeholder="Please enter your Username" autocomplete="on" size = "23"></p>
+      <p>Password&nbsp;&nbsp;<input type="password" id="password" name="password" required placeholder="Please enter your Password." size = "23"></p>
+      
+      <p><input type="submit" value="Sign-In">&nbsp;&nbsp;<input type="reset" value="Cancel"></p>
+    </div>
+    </form>
+  </body>
+</html>
